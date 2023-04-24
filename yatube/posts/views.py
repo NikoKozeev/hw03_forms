@@ -1,12 +1,11 @@
-from django.core.paginator import Paginator
 from constants import OPTIMAL_NUMBER_OF_POSTS
-from django.shortcuts import get_object_or_404, render, redirect
-from .models import Group
-from .models import Post
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
-from .forms import PostForm
+from django.core.paginator import Paginator
+from django.shortcuts import get_object_or_404, redirect, render
 
+from .forms import PostForm
+from .models import Group, Post
 
 User = get_user_model()
 
