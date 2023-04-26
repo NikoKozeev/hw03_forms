@@ -1,5 +1,5 @@
-from django.core.paginator import Paginator
 from constants import OPTIMAL_NUMBER_OF_POSTS
+from django.core.paginator import Paginator
 
 
 def page_func(request, post_list):
